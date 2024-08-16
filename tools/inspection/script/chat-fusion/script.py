@@ -2,9 +2,8 @@ import requests
 import json
 import sys
 
-# 从命令行参数中获取API key和base_url
-api_key = sys.argv[1]  # 假设需要使用api_key，在此示例中没有实际使用
-base_url = sys.argv[2]  # 基础URL
+api_key = sys.argv[1]
+base_url = sys.argv[2]
 
 # 拼接URL
 url1 = base_url + "/api/v1/chat/completions"

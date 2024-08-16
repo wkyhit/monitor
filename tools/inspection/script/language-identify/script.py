@@ -1,7 +1,5 @@
 import websocket
 import sys
-import time
-import os
 import json
 
 api_key = sys.argv[1] 

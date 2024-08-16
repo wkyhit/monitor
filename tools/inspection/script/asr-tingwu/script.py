@@ -3,7 +3,8 @@ import sys
 import time
 import os
 
-base_url = sys.argv[1]
+api_key = sys.argv[1] 
+base_url = sys.argv[2]
 url = f"{base_url}/upload-and-transcribe/"
 
 current_dir = os.path.dirname(os.path.abspath(__file__))

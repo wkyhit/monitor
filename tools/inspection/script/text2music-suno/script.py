@@ -1,5 +1,4 @@
 import requests
-import json
 import sys
 
 api_key = sys.argv[1] 
