@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "inspection"
+version = "0.1.0"
+description = ""
+authors = ["Deng Long <denglong@4paradigm.com>"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.103.1"
+uvicorn = "^0.22.0"
+requests = "^2.31.0"
+gunicorn = "^20.1.0"
+uvloop = "^0.17.0"
+omegaconf = "^2.3.0"
+pydantic = "^2.3.0"
+loguru = "^0.7.0"
+pyyaml = "^6.0.1"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
