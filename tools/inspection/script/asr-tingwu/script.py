@@ -1,12 +1,14 @@
 import requests
 import sys
 import time
+import os
 
 base_url = sys.argv[1]
-
 url = f"{base_url}/upload-and-transcribe/"
 
-file_path = "tools/inspection/script/asr-tingwu/test_16k.wav"
+current_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(current_dir, "test_16k.wav")
+
 files = {'file': open(file_path, 'rb')}
 data = {
     'speaker_count': '0',
