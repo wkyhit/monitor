@@ -8,7 +8,6 @@ api_key = sys.argv[1]
 base_url = sys.argv[2]
 
 url = base_url + "/language-identification"
-# url = "wss://vk-hk-api.4paradigm.com:31001/api/v1/language-identification"
 
 try:
     ws = websocket.create_connection(url, timeout=20)
